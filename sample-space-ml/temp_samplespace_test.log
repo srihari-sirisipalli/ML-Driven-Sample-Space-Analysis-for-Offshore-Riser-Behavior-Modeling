@@ -1,0 +1,14 @@
+20:48:57 [INFO ] samplespace_ml (setup_logging): File logging to 'temp_samplespace_test.log' enabled at level DEBUG.
+20:48:57 [INFO ] samplespace_ml (setup_logging): Logging for 'samplespace_ml' (re)initialized. Level: DEBUG.
+20:48:57 [INFO ] samplespace_ml (<module>): Main logger info after initial setup.
+20:48:57 [DEBUG] samplespace_ml.test_module.submodule (<module>): This is a debug message for test_module.submodule.
+20:48:57 [INFO ] samplespace_ml.test_module.submodule (<module>): This is an info message for test_module.submodule.
+20:48:57 [WARNING] samplespace_ml.test_module.submodule (<module>): This is a warning for test_module.submodule.
+20:48:57 [INFO ] samplespace_ml.another_module (<module>): Info message from another_logger, should use existing setup.
+20:48:57 [ERROR] samplespace_ml.test_module.submodule (<module>): A division by zero error occurred.
+Traceback (most recent call last):
+  File "C:\Users\siris\Projects\ML-Driven Sample Space Analysis for Offshore Riser Behavior Modeling\sample-space-ml\samplespace_ml\logging\log_config.py", line 203, in <module>
+    x = 1 / 0
+        ~~^~~
+ZeroDivisionError: division by zero
+20:48:57 [CRITICAL] samplespace_ml.test_module.submodule (<module>): This is a critical error after the exception.

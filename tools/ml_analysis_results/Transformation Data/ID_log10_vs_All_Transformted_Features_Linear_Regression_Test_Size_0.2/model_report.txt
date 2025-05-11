@@ -1,0 +1,29 @@
+Model Training Results
+==================================================
+
+Model Type: LinearRegression
+
+Selected Features (6):
+- Direction_sin
+- Direction_cos
+- Angle_sin
+- Angle_cos
+- Radius
+- Wave_Energy
+
+Training Set Metrics:
+- MSE: 1.177362
+- RMSE: 1.085063
+- MAE: 0.898273
+- R²: 0.467902
+- Explained Variance: 0.467902
+
+Test Set Metrics:
+- MSE: 1.178768
+- RMSE: 1.085711
+- MAE: 0.906014
+- R²: 0.474061
+- Explained Variance: 0.474068
+
+
+ID_log10_vs_All_Transformted_Features_Linear_Regression_Test_Size_0.2

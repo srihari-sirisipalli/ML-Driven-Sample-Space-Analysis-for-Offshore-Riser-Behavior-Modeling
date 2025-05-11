@@ -1,0 +1,28 @@
+Model Training Results
+==================================================
+
+Model Type: RandomForest
+
+Selected Features (5):
+- Direction
+- Hs
+- Tp
+- East
+- North
+
+Training Set Metrics:
+- MSE: 0.002368
+- RMSE: 0.048661
+- MAE: 0.012909
+- R²: 0.979112
+- Explained Variance: 0.979113
+
+Test Set Metrics:
+- MSE: 0.007933
+- RMSE: 0.089068
+- MAE: 0.016212
+- R²: 0.952708
+- Explained Variance: 0.952722
+
+
+ID_vs_All_Input_Features_Random_Forest_Regression_Test_Size_0.2

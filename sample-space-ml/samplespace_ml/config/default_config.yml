@@ -1,0 +1,116 @@
+# samplespace_ml/config/default_config.yml
+# Default configuration for the SampleSpace ML Library
+
+application:
+  name: "SampleSpace ML Tool"
+  version: "0.1.0" # Can also be sourced from samplespace_ml.__version__
+
+logging:
+  level: INFO  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(funcName)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  # To enable file logging, set a path. e.g., "logs/samplespace_app.log"
+  # The directory 'logs/' would need to be created or handled by the logger setup.
+  log_file: null
+  console_output: true # Whether to log to console
+  log_to_file_enabled: false # Master switch for file logging; log_file path still needed
+
+data_loader:
+  # Default skiprows if intelligent detection suggests multi-row headers
+  default_skiprows_excel: 1 # Often, Excel files might have one extra header row
+  skiprows_csv_unnamed_col0: 1 # If 'Unnamed: 0' suggests an index row
+  skiprows_csv_unnamed_col1_plus: 1 # If multiple 'Unnamed:' cols suggest header issues
+
+  # Default behavior for initial data cleaning steps after loading
+  drop_unnamed_first_column: true # If True, drops first col if it's like "Unnamed: 0"
+  coerce_numeric: true # If True, attempts to convert object columns to numeric after load
+
+  # Excel engine (None lets pandas choose, or specify 'openpyxl', 'xlrd' etc.)
+  excel_engine: null
+
+data_cleaner:
+  missing_values:
+    default_strategy: 'auto' # 'auto', 'drop_rows', 'drop_cols', 'fill'
+    default_numeric_fill: 'mean' # 'mean', 'median', 'mode', or a float
+    default_categorical_fill: 'mode' # 'mode', or a string
+
+transformations:
+  coordinate_transformer:
+    default_angle_units_output: 'radians' # 'radians' or 'degrees' for polar conversions
+  feature_transformer:
+    min_max_scale_range: [0, 1]
+    # Add other transformation defaults here
+
+analysis:
+  outlier_detector:
+    iqr_multiplier: 1.5
+  correlation:
+    default_method: 'pearson' # 'pearson', 'kendall', 'spearman'
+
+models:
+  # Default hyperparameters can be specified per model type
+  # These would be used if the GUI doesn't provide specific overrides.
+  LinearRegression:
+    hyperparameters:
+      fit_intercept: true
+      # 'normalize' is deprecated, use a Scaler instead if needed
+  Ridge:
+    hyperparameters:
+      alpha: 1.0
+      solver: 'auto'
+  Lasso:
+    hyperparameters:
+      alpha: 0.1 # Lasso often needs smaller alpha
+  ElasticNet:
+    hyperparameters:
+      alpha: 0.1
+      l1_ratio: 0.5
+  SVR:
+    hyperparameters:
+      kernel: 'rbf'
+      C: 1.0
+      epsilon: 0.1
+  RandomForestRegressor: # Changed from RandomForest to be specific
+    hyperparameters:
+      n_estimators: 100
+      max_depth: null # null means no limit in YAML, Python will interpret as None
+      min_samples_split: 2
+      min_samples_leaf: 1
+  DecisionTreeRegressor: # Added for decision tree tool
+    hyperparameters:
+      criterion: 'squared_error' # 'squared_error', 'friedman_mse', 'absolute_error', 'poisson'
+      splitter: 'best'
+      max_depth: null
+      min_samples_split: 2
+      min_samples_leaf: 1
+  GradientBoostingRegressor: # Changed from GradientBoosting
+    hyperparameters:
+      n_estimators: 100
+      learning_rate: 0.1
+      max_depth: 3
+  # Model Trainer defaults
+  model_trainer:
+    default_test_size: 0.2
+    default_random_state: 42
+    default_cv_folds: 5
+    default_feature_selection_k: 5 # For SelectKBest
+  model_comparator:
+    default_test_sizes: [0.1, 0.2, 0.3, 0.4] # Example
+    default_cv_folds: 5
+
+visualization:
+  default_theme: 'default_theme' # Corresponds to a theme file name in themes/
+  plot_manager:
+    default_dpi: 100
+    default_figsize: [8, 6] # width, height in inches
+  scatter_plot:
+    default_alpha: 0.7
+    trendline_color: 'red'
+  histogram:
+    default_bins: 'auto' # or an integer
+    kde: true
+  # Add more specific plot configurations if needed
+
+# Example for API keys or external service configs (keep sensitive info out of repo)
+# api_keys:
+#   some_service: "YOUR_API_KEY_HERE_OR_USE_ENV_VAR"

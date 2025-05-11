@@ -1,0 +1,13 @@
+Target Variable,Model Type,Features Used,Train MSE,Test MSE,Train R²,Test R²,Key Observations
+ID,Linear Regression,"Direction, Hs, Tp, East, North",0.101,0.152,0.109,0.091,"Poor performance, low R²"
+ID,Linear Regression,"Direction, Hs, East, North",0.103,0.155,0.092,0.078,Slight decline without Tp
+ID,Random Forest,"Direction, Hs, Tp, East, North",0.002,0.008,0.979,0.953,Excellent generalization
+ID,Random Forest,"Direction, Hs, East, North",0.002,0.009,0.979,0.948,Minimal impact of dropping Tp
+OD,Linear Regression,"Direction, Hs, Tp, East, North",0.039,0.051,0.102,0.094,Still low R²
+OD,Linear Regression,"Direction, Hs, East, North",0.04,0.052,0.086,0.08,Slight worsening without Tp
+OD,Random Forest,"Direction, Hs, Tp, East, North",0.001,0.003,0.981,0.948,Outstanding results
+OD,Random Forest,"Direction, Hs, East, North",0.001,0.003,0.98,0.948,Maintained excellent metrics
+Top,Linear Regression,"Direction, Hs, Tp, East, North",2.937,2.939,0.455,0.471,Slightly better R² but high error
+Top,Linear Regression,"Direction, Hs, East, North",3.313,3.378,0.385,0.392,Performance worsens without Tp
+Top,Random Forest,"Direction, Hs, Tp, East, North",0.003,0.004,0.999,0.999,Near perfect performance
+Top,Random Forest,"Direction, Hs, East, North",0.003,0.004,0.999,0.999,Still excellent

@@ -1,0 +1,21 @@
+Model Comparison Results
+==================================================
+
+Target Variable: Top_log10
+Number of Features: 6
+Number of Models Compared: 2
+Test Size Range: 0.10 - 0.90
+
+Best Performing Model: RandomForest
+Best Test R² Score: 0.999856
+
+Best Model by Test Size:
+  Test Size 0.10: RandomForest (R² = 0.999856)
+  Test Size 0.20: RandomForest (R² = 0.999809)
+  Test Size 0.30: RandomForest (R² = 0.999768)
+  Test Size 0.40: RandomForest (R² = 0.999733)
+  Test Size 0.50: RandomForest (R² = 0.999676)
+  Test Size 0.60: RandomForest (R² = 0.999582)
+  Test Size 0.70: RandomForest (R² = 0.999445)
+  Test Size 0.80: RandomForest (R² = 0.999169)
+  Test Size 0.90: RandomForest (R² = 0.998511)

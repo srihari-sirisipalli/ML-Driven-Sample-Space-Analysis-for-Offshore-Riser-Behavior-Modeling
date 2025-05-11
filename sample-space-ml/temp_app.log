@@ -1,0 +1,48 @@
+2025-05-11 20:46:34 - samplespace_ml - INFO - File logging to 'temp_app.log' enabled at level DEBUG.
+2025-05-11 20:46:34 - samplespace_ml - INFO - Logging for 'samplespace_ml' initialized. Level: DEBUG.
+2025-05-11 20:46:34 - samplespace_ml.main_app - DEBUG - This is a debug message from the main_app logger.
+2025-05-11 20:46:34 - samplespace_ml.main_app - INFO - This is an info message.
+2025-05-11 20:46:34 - samplespace_ml.module_A - WARNING - This is a warning from module_A.
+2025-05-11 20:46:34 - samplespace_ml.module_A - ERROR - A division by zero occurred!
+Traceback (most recent call last):
+  File "C:\Users\siris\Projects\ML-Driven Sample Space Analysis for Offshore Riser Behavior Modeling\sample-space-ml\samplespace_ml\logging\log_config.py", line 184, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+2025-05-11 20:46:34 - samplespace_ml.module_A - CRITICAL - A critical error simulation.
+2025-05-11 20:46:40 - samplespace_ml - INFO - File logging to 'temp_app.log' enabled at level DEBUG.
+2025-05-11 20:46:40 - samplespace_ml - INFO - Logging for 'samplespace_ml' initialized. Level: DEBUG.
+2025-05-11 20:46:40 - samplespace_ml.main_app - DEBUG - This is a debug message from the main_app logger.
+2025-05-11 20:46:40 - samplespace_ml.main_app - INFO - This is an info message.
+2025-05-11 20:46:40 - samplespace_ml.module_A - WARNING - This is a warning from module_A.
+2025-05-11 20:46:40 - samplespace_ml.module_A - ERROR - A division by zero occurred!
+Traceback (most recent call last):
+  File "C:\Users\siris\Projects\ML-Driven Sample Space Analysis for Offshore Riser Behavior Modeling\sample-space-ml\samplespace_ml\logging\log_config.py", line 184, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+2025-05-11 20:46:40 - samplespace_ml.module_A - CRITICAL - A critical error simulation.
+2025-05-11 20:48:10 - samplespace_ml - INFO - File logging to 'temp_app.log' enabled at level DEBUG.
+2025-05-11 20:48:10 - samplespace_ml - INFO - Logging for 'samplespace_ml' initialized. Level: DEBUG.
+2025-05-11 20:48:10 - samplespace_ml.main_app - DEBUG - This is a debug message from the main_app logger.
+2025-05-11 20:48:10 - samplespace_ml.main_app - INFO - This is an info message.
+2025-05-11 20:48:10 - samplespace_ml.module_A - WARNING - This is a warning from module_A.
+2025-05-11 20:48:10 - samplespace_ml.module_A - ERROR - A division by zero occurred!
+Traceback (most recent call last):
+  File "C:\Users\siris\Projects\ML-Driven Sample Space Analysis for Offshore Riser Behavior Modeling\sample-space-ml\samplespace_ml\logging\log_config.py", line 184, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+2025-05-11 20:48:10 - samplespace_ml.module_A - CRITICAL - A critical error simulation.
+2025-05-11 20:48:17 - samplespace_ml - INFO - File logging to 'temp_app.log' enabled at level DEBUG.
+2025-05-11 20:48:17 - samplespace_ml - INFO - Logging for 'samplespace_ml' initialized. Level: DEBUG.
+2025-05-11 20:48:17 - samplespace_ml.main_app - DEBUG - This is a debug message from the main_app logger.
+2025-05-11 20:48:17 - samplespace_ml.main_app - INFO - This is an info message.
+2025-05-11 20:48:17 - samplespace_ml.module_A - WARNING - This is a warning from module_A.
+2025-05-11 20:48:17 - samplespace_ml.module_A - ERROR - A division by zero occurred!
+Traceback (most recent call last):
+  File "C:\Users\siris\Projects\ML-Driven Sample Space Analysis for Offshore Riser Behavior Modeling\sample-space-ml\samplespace_ml\logging\log_config.py", line 184, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+2025-05-11 20:48:17 - samplespace_ml.module_A - CRITICAL - A critical error simulation.

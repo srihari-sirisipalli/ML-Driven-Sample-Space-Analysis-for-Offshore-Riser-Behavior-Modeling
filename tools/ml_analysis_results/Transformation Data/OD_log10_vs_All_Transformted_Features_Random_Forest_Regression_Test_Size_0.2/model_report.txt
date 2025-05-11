@@ -1,0 +1,29 @@
+Model Training Results
+==================================================
+
+Model Type: RandomForest
+
+Selected Features (6):
+- Direction_sin
+- Direction_cos
+- Angle_sin
+- Angle_cos
+- Radius
+- Wave_Energy
+
+Training Set Metrics:
+- MSE: 0.071683
+- RMSE: 0.267738
+- MAE: 0.180229
+- R²: 0.969354
+- Explained Variance: 0.969355
+
+Test Set Metrics:
+- MSE: 0.084821
+- RMSE: 0.291240
+- MAE: 0.194918
+- R²: 0.964133
+- Explained Variance: 0.964177
+
+
+OD_log10_vs_All_Transformted_Features_Random_Forest_Regression_Test_Size_0.2

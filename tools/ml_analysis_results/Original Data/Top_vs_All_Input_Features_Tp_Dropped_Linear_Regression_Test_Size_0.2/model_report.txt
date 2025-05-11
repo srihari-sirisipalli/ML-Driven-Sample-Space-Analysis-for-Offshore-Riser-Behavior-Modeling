@@ -1,0 +1,29 @@
+Model Training Results
+==================================================
+
+Model Type: LinearRegression
+
+Selected Features (4):
+- Direction
+- Hs
+- East
+- North
+
+Training Set Metrics:
+- MSE: 3.312969
+- RMSE: 1.820156
+- MAE: 1.192284
+- R²: 0.385453
+- Explained Variance: 0.385453
+
+Test Set Metrics:
+- MSE: 3.377995
+- RMSE: 1.837932
+- MAE: 1.206935
+- R²: 0.391528
+- Explained Variance: 0.391598
+
+
+
+
+Top_vs_All_Input_Features_Tp_Dropped_Linear_Regression_Test_Size_0.2
